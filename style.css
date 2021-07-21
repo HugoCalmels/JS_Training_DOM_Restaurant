@@ -1,0 +1,147 @@
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  background-color: #CCC;
+}
+
+.tab:hover {
+  background-color: #AAA;
+}
+
+/* https://www.youtube.com/watch?v=MBaw_6cPmAw&ab_channel=WebDevSimplified */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.menu.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.menu-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.menu-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.menu-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.menu-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px 0;
+}
+
+.grille {
+  padding-top: 50px;
+  max-width: 1300px;
+  width: 80%;
+  height: auto;
+  margin: 30px auto;
+  /* border: 1px solid #333; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  grid-gap: 10px;
+
+}
+
+.grid-item {
+  width: 300px;
+  height: 200px;
+  background: #333;
+  border-radius: 25px;
+  border: solid 2px black;
+  cursor: move;
+}
+
+.grille img {
+  display: block !important;
+  width: 100% !important;
+  border-radius: 25px;
+  
+}
+
+.dragged {
+  border: dashed 5px teal;
+}
+
+.dropHover {
+  border: solid 5px orange;
+}

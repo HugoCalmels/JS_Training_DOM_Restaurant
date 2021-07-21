@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+  <div style="text-align: center; font-family: cursive;">
+    <h1><u> The Restaurant Project</u></h1>
+    <h4><i> Des produits bio écolos bobo l'asticot</i></h4>
+  </div>
+  
+
+
+
+  <ul class="tabs">
+    <li data-tab-target="#home" class="tab">Acceuil</li>
+    <li data-tab-target="#pricing" class="tab">Menu</li>
+    <li data-tab-target="#photos" class="tab">Photos</li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" data-tab-content>
+      <h1>Acceuil</h1>
+        <image>
+          <img style="width: 100%; height: 700px;" id="image" src="https://images.unsplash.com/photo-1544025162-d76694265947?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80">
+        </image>
+    </div>
+
+    <div id="pricing" data-tab-content class="active">
+      <h1>Menu</h1>
+      <div id="test"> Some informations on pricing </div>
+      
+      <button data-menu-target="#menu">Marre de ce menu ? Changez le</button>
+      <div class="menu" id="menu">
+        <div class="menu-header">
+          <div class="title">Menu aléatoire</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="menu-body" id="menu-body">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est veritatis, neque eius explicabo quae laborum eaque facilis molestiae suscipit perferendis nemo nostrum atque fugiat voluptates consequatur, repellendus, expedita sapiente blanditiis unde mollitia aut repellat cumque tempore. Aspernatur ullam eum sed reprehenderit maiores alias possimus quod, voluptate consequuntur est iste! Mollitia.
+        </div>
+      </div>
+      
+      <div id="overlay"></div>
+    </div>
+
+
+    <div id="photos" data-tab-content>
+      <div class="grille">
+        <div class="grid-item" draggable="true"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"></div>
+        <div class="grid-item" draggable="true"><img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80"></div>
+        <div class="grid-item" draggable="true"><img src="https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80"></div>
+        <div class="grid-item" draggable="true"><img src="https://images.unsplash.com/photo-1460306855393-0410f61241c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"></div>
+
+        <div class="grid-item" draggable="true"><img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"></div>
+        <div class="grid-item" draggable="true"><img src="https://images.unsplash.com/photo-1568096889942-6eedde686635?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"></div>
+        <div class="grid-item" draggable="true"><img src="https://images.unsplash.com/photo-1558030006-450675393462?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80"></div>
+        <div class="grid-item" draggable="true"><img src="https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1052&q=80"></div>
+
+
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
